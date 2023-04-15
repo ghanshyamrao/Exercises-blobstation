@@ -1,0 +1,67 @@
+.calendar {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .month-year-selector,
+  .language-selector {
+    display: flex;
+    align-items: center;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  #days-of-week >th{
+   background-color: rgb(141, 141, 141) !important; 
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .calendar {
+      width: auto;
+    }
+  
+    .calendar-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .month-year-selector,
+    .language-selector {
+      margin-bottom: 20px;
+    }
+    th , td{
+        padding: 10px !important;
+    }
+    
+  }
+  
