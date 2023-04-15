@@ -5,6 +5,6 @@ read message
 
 git add .
 git commit -m "$message"
-git push origin main
+git push
 
 echo "Code pushed to GitHub successfully!"
